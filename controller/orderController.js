@@ -1,5 +1,3 @@
-const dotenv = require('dotenv')
-dotenv.config({ path: './config.env' })
 const catchAsync = require('./../utils/catchasync')
 const AppError = require('../utils/AppError')
 const Order = require('../models/orderModel')
