@@ -9,7 +9,7 @@ class APIFeature {
         const excludedFields = ['page', 'limit', 'sort', 'fields'];
         excludedFields.forEach(e => delete queryObj[e])
 
-        console.log(queryObj);
+        // console.log(queryObj);
         let queryString = JSON.stringify(queryObj);
         queryString = queryString.replace(/\b(gte|gt|lte|lt)\b/g, match => `$${match}`);
         this.query = this.query.find(JSON.parse(queryString));
