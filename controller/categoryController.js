@@ -1,7 +1,7 @@
 const catchasync = require('../utils/catchasync');
 const Category = require('./../models/categoryModel')
 const factory = require('./handlerFactory');
-const AppError = require('./../utils/AppError')
+const AppError = require('../utils/AppError')
 
 
 exports.getAllCategories = factory.getAll(Category)

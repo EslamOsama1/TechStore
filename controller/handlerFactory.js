@@ -1,5 +1,5 @@
 const catchAsync = require('../utils/catchasync')
-const AppError = require('./../utils/AppError')
+const AppError = require('../utils/AppError')
 const apiFeature = require('../utils/apiFeature')
 
 exports.getAll = Model => catchAsync(async (req, res, next) => {

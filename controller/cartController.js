@@ -2,7 +2,7 @@ const Product = require('../models/productModel')
 const Cart = require('../models/cartModel')
 const Coupon = require('../models/couponModel')
 const catchAsync = require('../utils/catchasync')
-const AppError = require('./../utils/AppError')
+const AppError = require('../utils/AppError')
 
 const calcTotalCartPrice = (cart) => {
     let totalPrice = 0;

@@ -5,7 +5,7 @@ const crypto = require('crypto')
 
 const User = require('../models/userModel')
 const catchAsync = require('../utils/catchasync')
-const AppError = require('./../utils/AppError')
+const AppError = require('../utils/AppError')
 const sendEmail = require('./../utils/email')
 
 

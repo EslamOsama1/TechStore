@@ -1,5 +1,5 @@
 const catchAsync = require('./../utils/catchasync')
-const AppError = require('./../utils/AppError')
+const AppError = require('../utils/AppError')
 const Order = require('../models/orderModel')
 const Cart = require('../models/cartModel')
 const User = require('../models/userModel')

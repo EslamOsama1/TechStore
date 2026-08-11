@@ -2,7 +2,7 @@ const path = require('path');
 const express = require('express')
 const dotenv = require('dotenv')
 const mongoose = require('mongoose')
-const AppErorr = require('./utils/appError')
+const AppErorr = require('./utils/AppError')
 
 const morgan = require('morgan');
 const rateLimit = require('express-rate-limit')
