@@ -1,3 +1,4 @@
+const dotenv = require('dotenv')
 const catchAsync = require('./../utils/catchasync')
 const AppError = require('../utils/AppError')
 const Order = require('../models/orderModel')
@@ -5,6 +6,7 @@ const Cart = require('../models/cartModel')
 const User = require('../models/userModel')
 const Product = require('../models/productModel')
 const factory = require("./handlerFactory");
+
 console.log(
     "STRIPE_SECRET_KEY exists:",
     !!process.env.STRIPE_SECRET_KEY
