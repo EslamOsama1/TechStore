@@ -9,6 +9,9 @@ const DB = process.env.MONGODB_URI
 mongoose.connect(DB).then(() => console.log("DB connection successfully"))
     .catch(err => console.log(err))
 
-const server = app.listen(3000, () => {
+
+const PORT = process.env.PORT || 3000
+
+const server = app.listen(PORT, () => {
     console.log('server running on port : 3000')
 })
